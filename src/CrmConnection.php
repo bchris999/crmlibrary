@@ -11,12 +11,13 @@ namespace Bostonspike\CrmLibrary;
 class CrmConnection {
     private $_client;
 
-    public function __construct($root_url, $username, $password)
+    public function __construct($root_url, $username, $password, $headers = [])
     {
         $this->_client = new \GuzzleHttp\Client([
             'base_uri' => $root_url.'/XRMServices/2011/',
             'timeout' => 20.0,
             'auth' => [$username, $password, 'ntlm'],
+            'headers' => $headers,
         ]);
     }
 
