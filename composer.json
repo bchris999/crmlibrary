@@ -1,0 +1,23 @@
+{
+    "name": "bostonspike/crmlibrary",
+    "description": "CRM Library - Specific usage",
+    "version": "0.0.1",
+    "type": "library",
+    "homepage": "https://dev.bostonspike.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chris Brazier",
+            "email": "chrisb@bostonspike.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "BostonSpike\\CrmLibrary": "src/"
+        }
+    }
+}
